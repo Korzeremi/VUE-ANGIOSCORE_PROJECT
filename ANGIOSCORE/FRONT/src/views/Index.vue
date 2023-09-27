@@ -4,7 +4,7 @@
 <template>
     <body>
         <div class="index-title">
-            <p>ANGIOCLASS</p>
+            <p>ANGIOSCORE</p>
         </div>
         <div class="index-table">
             <div class="index-table-r">
