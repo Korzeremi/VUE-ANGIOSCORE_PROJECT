@@ -3,69 +3,90 @@ body {
     flex-direction: column;
     place-content: center;
     align-items: center;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: white;
-}
-
-.index-table {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .index-svp {
-        display: flex;
-        flex-direction: column;
-        .index-svp-title {
-            font-size: 200%;
-            font-weight: bolder;
-        }
-        .index-svp-select {
-            display: flex;
-            .index-svp-select-S {
-                margin: 0 30px 0 30px;
-        
-            }
-            .index-svp-select-V {
-                margin: 0 30px 0 30px;
-            }
-            .index-svp-select-P {
-                margin: 0 30px 0 30px;
-            }
-        }
-        .index-svp-result {
-            font-size: larger;
-            text-align: center;
-        }
+    .index-title {
+        font-size: 250%;
+        font-weight: bolder;
     }
-    .index-ceap {
+    .index-table {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .index-ceap-title {
-            font-size: 200%;
-            font-weight: bolder;
-        }
-        .index-ceap-select {
+        .index-svp {
             display: flex;
-            .index-ceap-select-C {
-                margin: 0 30px 0 30px;
+            flex-direction: column;
+            .index-svp-title {
+                font-size: 200%;
+                font-weight: bolder;
             }
-            .index-ceap-select-E {
-                margin: 0 30px 0 30px;
+            .index-svp-select {
+                display: flex;
+                .index-svp-select-S {
+                    margin: 0 30px 0 30px;
+            
+                }
+                .index-svp-select-V {
+                    margin: 0 30px 0 30px;
+                }
+                .index-svp-select-P {
+                    margin: 0 30px 0 30px;
+                }
             }
-            .index-ceap-select-A {
-                margin: 0 30px 0 30px;
+        }
+        .index-ceap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .index-ceap-title {
+                font-size: 200%;
+                font-weight: bolder;
             }
-            .index-ceap-select-P {
-                margin: 0 30px 0 30px;
+            .index-ceap-select {
+                display: flex;
+                .index-ceap-select-C {
+                    margin: 0 30px 0 30px;
+                }
+                .index-ceap-select-E {
+                    margin: 0 30px 0 30px;
+                }
+                .index-ceap-select-A {
+                    margin: 0 30px 0 30px;
+                    .index-ceap-select-Ax {
+                        display: flex;
+                    }
+                }
+                .index-ceap-select-P {
+                    margin: 0 30px 0 30px;
+                }
+            }
+        }
+    }
+    .index-results {
+        .index-svp-result {
+            font-size: larger;
+            text-align: center;
+            display: flex;
+            .svp-p {
+                font-weight: bold;
             }
         }
         .index-ceap-result {
+            display: flex;
             font-size: larger;
             text-align: center;
+            .ceap-p {
+                font-weight: bold;
+            }
+        }
+        .index-results-btn {
+            display: flex;
+            flex-direction: column;
         }
     }
 }

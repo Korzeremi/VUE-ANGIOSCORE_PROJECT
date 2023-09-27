@@ -53,9 +53,6 @@
                         </select>
                     </div>
                 </div>
-                <div class="index-svp-result">
-                    <p v-if="resultValueSVP !== 'NULL'">{{ resultValueSVP }}</p>
-                </div>
             </div>
             <div class="index-ceap">
                 <div class="index-ceap-title">
@@ -126,9 +123,20 @@
                         </select>
                     </div>
                 </div>
-                <div class="index-ceap-result">
-                    <p v-if="resultValueCEAP !== 'NULL'">{{ resultValueCEAP }}</p>
-                </div>
+            </div>
+        </div>
+        <div class="index-results">
+            <div class="index-svp-result">
+                <p class="svp-p">SVP :</p>
+                <p v-if="resultValueSVP !== 'NULL'">{{ resultValueSVP }}</p>
+            </div>
+            <div class="index-ceap-result">
+                <p class="ceap-p">CEAP :</p>
+                <p v-if="resultValueCEAP !== 'NULL'">{{ resultValueCEAP }}</p>
+            </div>
+            <div class="index-results-btn">
+                <button @click="EraseSVP">CLEAR SVP</button>   
+                <button @click="EraseCEAP">CLEAR CEAP</button>   
             </div>
         </div>
     </body>
@@ -230,6 +238,20 @@ export default {
     ShowResultCEAP() {
         const selectedValuesCEAP = [...this.CDrop, ...this.EDrop, ...this.A1Drop, ...this.A2Drop, ...this.PDrop];
         this.resultValueCEAP = selectedValuesCEAP.join('');
+    },
+    EraseSVP() {
+        this.selectedValuesSVP = '';
+        this.sDrop = [];
+        this.vDrop = [];
+        this.pDrop = [];
+    },
+    EraseCEAP() {
+        this.selectedValuesCEAP = '';
+        this.CDrop = [];
+        this.EDrop = [];
+        this.A1Drop = [];
+        this.A2Drop = [];
+        this.PDrop = [];
     }
   }
 };
