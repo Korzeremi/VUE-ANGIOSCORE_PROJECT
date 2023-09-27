@@ -9,87 +9,64 @@ body {
     background-color: white;
 }
 
-.index-title {
-    font-size: 175%;
-    font-weight: bolder;
-}
-
 .index-table {
-    .index-table-r {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .index-svp {
         display: flex;
         flex-direction: column;
-        align-items:center ;
-        .index-table-r-title {
-
+        .index-svp-title {
+            font-size: 200%;
+            font-weight: bolder;
         }
-        .index-table-r-row {
+        .index-svp-select {
             display: flex;
-            flex-direction: row;
-            .index-table-r1 {
-
+            .index-svp-select-S {
+                margin: 0 30px 0 30px;
+        
             }
-            .index-table-r2 {
-
+            .index-svp-select-V {
+                margin: 0 30px 0 30px;
             }
-            .index-table-r3 {
-
+            .index-svp-select-P {
+                margin: 0 30px 0 30px;
             }
+        }
+        .index-svp-result {
+            font-size: larger;
+            text-align: center;
         }
     }
-    .index-table-s {
+    .index-ceap {
         display: flex;
         flex-direction: column;
-        align-items:center ;
-        .index-table-s-title {
-
+        justify-content: center;
+        align-items: center;
+        .index-ceap-title {
+            font-size: 200%;
+            font-weight: bolder;
         }
-        .index-table-s-row {
+        .index-ceap-select {
             display: flex;
-            flex-direction: row;
-            .index-table-s1 {
-
+            .index-ceap-select-C {
+                margin: 0 30px 0 30px;
             }
-            .index-table-s2 {
-
+            .index-ceap-select-E {
+                margin: 0 30px 0 30px;
             }
-            .index-table-s3 {
-                
+            .index-ceap-select-A {
+                margin: 0 30px 0 30px;
+            }
+            .index-ceap-select-P {
+                margin: 0 30px 0 30px;
             }
         }
-    }
-    .index-table-v {
-        display: flex;
-        flex-direction: column;
-        align-items:center ;
-        .index-table-v-title {
-
-        }
-        .index-table-v-row {
-            display: flex;
-            flex-direction: row;
-            .index-table-v1 {
-
-            }
-            .index-table-v2 {
-
-            }
-            .index-table-v3 {
-                
-            }
+        .index-ceap-result {
+            font-size: larger;
+            text-align: center;
         }
     }
 }
 
-.index-btn {
-    button {
-        background-color: blue; 
-        color: white;
-        &:hover {
-            cursor: pointer;
-        }
-    }
-}
-
-.index-result {
-    font-size: larger;
-}
