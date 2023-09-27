@@ -6,121 +6,90 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: white;
 }
 
-.index-back-sct {
-    video {
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: 1;
-    }
+.index-title {
+    font-size: 175%;
+    font-weight: bolder;
 }
 
-.index-content-sct {
-    // background-color: cyan;
-    backdrop-filter: blur(50px);
-    // background-color: rgba(0, 0, 0, 0.315);
-    background-color: rgba(0, 0, 0, 0.377);
-    border: none;
-    border-radius: 10px;
-    height: 15rem;
-    width: 45rem;
-    z-index: 999;
-    user-select: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    place-content: center;
-    justify-content: space-between;
+.index-table {
+    .index-table-r {
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        .index-table-r-title {
 
-    .index-text-sct {
-        height: 5rem;
-        margin-left: 4rem;
-        // background-color: yellow;
-        h1 {
-            color: white;
-            font-size: 3rem;
         }
-        h4 {
-            color: white;
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
-        }
-    }
-
-    .index-btn-sct {
-        margin-right: 4rem;
-        a {
-            // background-color: springgreen;
-            backdrop-filter: blur(5px);
-            background-color: rgba(246, 251, 255, 0.219);
-            height: 3.5rem;
-            width: 13rem;
-            border-radius: 5px;
-            border: none;
+        .index-table-r-row {
             display: flex;
-            place-content: center;
-            align-items: center;
-            transition-property: background-color;
-            transition-duration: 0.4s;
-            transition-delay: 0.15s;
-            &:hover{
-                cursor: pointer;
-                background-color: rgba(3, 217, 255, 0.342);
-            }
-            p {
-                color: #FFF;
-                font-size: 1rem;
-                transition-property: color, font-size;
-                transition-duration: 0.25s;
-                transition-delay: 0.05s;
-                user-select: none;
-                &:hover {
-                    // cursor: pointer;
-                    color: aqua;
-                    font-size: 1.15rem;
-                }
-            }
-        }
-    }
+            flex-direction: row;
+            .index-table-r1 {
 
+            }
+            .index-table-r2 {
+
+            }
+            .index-table-r3 {
+
+            }
+        }
+    }
+    .index-table-s {
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        .index-table-s-title {
+
+        }
+        .index-table-s-row {
+            display: flex;
+            flex-direction: row;
+            .index-table-s1 {
+
+            }
+            .index-table-s2 {
+
+            }
+            .index-table-s3 {
+                
+            }
+        }
+    }
+    .index-table-v {
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        .index-table-v-title {
+
+        }
+        .index-table-v-row {
+            display: flex;
+            flex-direction: row;
+            .index-table-v1 {
+
+            }
+            .index-table-v2 {
+
+            }
+            .index-table-v3 {
+                
+            }
+        }
+    }
 }
-.footbar {
-    z-index: 999;
-    // background-color: aqua;
-    backdrop-filter: blur(15px);
-    background-color: rgba(0, 0, 0, 0.377);
-    height: 2.75rem;
-    position: absolute;
-    top: 92%;
-    width: 45rem;
-    border: none;
-    border-radius: 10px;
-    .footbar-infos-sct {
-        a {
-            &:hover {
-                cursor: pointer;
-            }
-            p {
-                color: white;
-                font-style: italic;
-                font-weight: bold;
-                user-select: none;
-            }
+
+.index-btn {
+    button {
+        background-color: blue; 
+        color: white;
+        &:hover {
+            cursor: pointer;
         }
     }
-    .footbar-support-sct {
-        a {
-            color: #FFF;
-            user-select: none;
-            &:hover {
-                color: rgba(3, 217, 255, 0.658);
-            }
-        }
-    }
+}
+
+.index-result {
+    font-size: larger;
 }
