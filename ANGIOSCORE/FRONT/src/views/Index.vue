@@ -25,7 +25,7 @@
                     <div class="index-svp-select">
                         <div class="index-svp-select-S">
                             <button class="s-dropdown-button" @click="StoggleDropdown">Symptoms (S)</button>
-                            <select multiple id="s-dropdown" class="s-dropdown-content" style="display: none;" v-model="sDrop" @change="ShowResult">
+                            <select multiple id="s-dropdown" class="s-dropdown-content" style="display: block;" v-model="sDrop" @change="ShowResult">
                                 <option value="0">No pelvic symptoms</option>
                                 <option value="1">Renal</option>
                                 <option value="2">Pelvic</option>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="index-svp-select-V">
                             <button class="v-dropdown-button" @click="VtoggleDropdown">Varices (V)</button>
-                            <select multiple id="v-dropdown" class="v-dropdown-content" style="display: none;" v-model="vDrop" @change="ShowResult">
+                            <select multiple id="v-dropdown" class="v-dropdown-content" style="display: block;" v-model="vDrop" @change="ShowResult">
                                 <option value="0">No pelvic varices</option>
                                 <option value="1">Renal</option>
                                 <option value="2">Pelvic</option>
@@ -48,7 +48,7 @@
                         </div>
                         <div class="index-svp-select-P">
                             <button class="p-dropdown-button" @click="PtoggleDropdown">Anatomy/pathophysiology (P)</button>
-                            <select multiple id="p-dropdown" class="p-dropdown-content" style="display: none;" v-model="pDrop" @change="ShowResult">
+                            <select multiple id="p-dropdown" class="p-dropdown-content" style="display: block;" v-model="pDrop" @change="ShowResult">
                                 <option value="IVCOT">-IVC-O-T</option>
                                 <option value="NT">---NT</option>
                                 <option value="C">---C</option>
@@ -73,7 +73,7 @@
                     <div class="index-ceap-select">
                         <div class="index-ceap-select-C">
                             <button class="C-dropdown-button" @click="CtoggleDropdown">Clinical</button>
-                            <select multiple id="C-dropdown" class="C-dropdown-content" style="display: none;" v-model="CDrop">         
+                            <select multiple id="C-dropdown" class="C-dropdown-content" style="display: block;" v-model="CDrop">         
                                 <option value="C0">C0</option>
                                 <option value="C1">C1</option>
                                 <option value="C2">C2</option>
@@ -87,7 +87,7 @@
                         </div>
                         <div class="index-ceap-select-E">
                             <button class="E-dropdown-button" @click="EtoggleDropdown">Etiologic</button>
-                            <select multiple id="E-dropdown" class="E-dropdown-content" style="display: none;" v-model="EDrop">         
+                            <select multiple id="E-dropdown" class="E-dropdown-content" style="display: block;" v-model="EDrop">         
                                 <option value="Ec">Ec</option>
                                 <option value="Ep">Ep</option>
                                 <option value="Es">Es</option>
@@ -97,13 +97,13 @@
                         <div class="index-ceap-select-A">
                             <button class="A-dropdown-button" @click="AtoggleDropdown">Anatomic</button>
                             <div class="index-ceap-select-Ax">
-                                <select multiple id="A1-dropdown" class="A1-dropdown-content" style="display: none;" v-model="A1Drop">         
+                                <select multiple id="A1-dropdown" class="A1-dropdown-content" style="display: block;" v-model="A1Drop">         
                                     <option value="As">As</option>
                                     <option value="Ad">Ad</option>
                                     <option value="Ap">Ap</option>
                                     <option value="An">An</option>
                                 </select>
-                                <select multiple id="A2-dropdown" class="A2-dropdown-content" style="display: none;" v-model="A2Drop">         
+                                <select multiple id="A2-dropdown" class="A2-dropdown-content" style="display: block;" v-model="A2Drop">         
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -127,7 +127,7 @@
                         </div>
                         <div class="index-ceap-select-P">
                             <button class="P2-dropdown-button" @click="P2toggleDropdown">Pathophysiologic</button>
-                            <select multiple id="P2-dropdown" class="P2-dropdown-content" style="display: none;" v-model="PDrop">         
+                            <select multiple id="P2-dropdown" class="P2-dropdown-content" style="display: block;" v-model="PDrop">         
                                 <option value="Pr">Pr</option>
                                 <option value="Po">Po</option>
                                 <option value="Pro">Pro</option>
